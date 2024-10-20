@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap'); body {
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
 input:focus {
     border: 1px solid orange;
     box-shadow: 0 0 4px orange;
@@ -5,17 +12,17 @@ input:focus {
 }
 
 :-webkit-input-placeholder {
-    color:#888;
-    font-style:italic;
+    color: #888;
+    font-style: italic;
 }
 
 :-moz-placeholder {
-    color:#888;
-    font-style:italic;
+    color: #888;
+    font-style: italic;
 }
 
 html {
-    height:100%;
+    height: 100%;
     font-size: 100%;
     overflow-y: scroll;
     -webkit-text-size-adjust: 100%;
@@ -23,10 +30,10 @@ html {
 }
 
 body {
-    -webkit-font-smoothing:antialiased;
-    font-size: 16px;
-    font-smoothing:antialiased;
-    height:100%;
+    -webkit-font-smoothing: antialiased;
+    font-size: 1rem;
+    font-smoothing: antialiased;
+    height: 100%;
     line-height: 1.5em;
     margin: 0;
     text-align: center;
@@ -35,9 +42,9 @@ body {
 #brickwall {
     background-image: url(../logo.php?backdrop);
     -webkit-background-size: cover;
-       -moz-background-size: cover;
-         -o-background-size: cover;
-            background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     position: absolute;
     top: 0;
     left: 0;
@@ -54,6 +61,7 @@ body {
     bottom: 0;
     background-color: rgba(255, 165, 0, 0.7);
 }
+
 #background {
     position: absolute;
     top: 0;
@@ -63,13 +71,13 @@ body {
     z-index: -1;
     background-image: url(../logo.php?backdrop);
     -webkit-background-size: cover;
-       -moz-background-size: cover;
-         -o-background-size: cover;
-            background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     background-attachment: fixed;
     mix-blend-mode: normal;
-    filter:"progid:DXImageTransform.Microsoft.Blur(PixelRadius='6')";
-    -ms-filter:"progid:DXImageTransform.Microsoft.Blur(PixelRadius='6')";
+    filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius='6')";
+    -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius='6')";
 }
 
 #blur {
@@ -85,19 +93,14 @@ body {
     z-index: -1;
 }
 
-body, input {
-    font-family: helvetica, arial, sans-serif;
-    color: #000;
-}
-
 #loginBox {
     box-shadow: 0 0 50px 5px rgb(0 0 0 / 25%), 0 0 5px -1px white;
     mix-blend-mode: normal;
     isolation: isolate;
-    width:400px;
-    padding:1em;
+    width: 400px;
+    padding: 1em;
     padding-bottom: 1em;
-    text-align:center;
+    text-align: center;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -122,6 +125,7 @@ body, input {
     mix-blend-mode: normal;
     border: 1px solid rgba(0,0,0,0.3);
 }
+
 /* IE 9-10 */
 @media screen\0 {
     #loginBox:after {
@@ -130,12 +134,15 @@ body, input {
 }
 
 h1 {
-    margin:0;
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
 }
 
 #logo a {
-    display:block;
-    text-decoration:none;
+    display: block;
+    text-decoration: none;
     height: 100px;
 }
 
@@ -147,6 +154,7 @@ h1 {
     outline: none;
     border: none;
 }
+
 .valign-helper {
     height: 100%;
     display: inline-block;
@@ -154,32 +162,32 @@ h1 {
 }
 
 h3 {
-    margin:1em 0;
-    text-align:center;
-    font-size:0.8em;
-    font-weight:normal;
-    color:#d00;
+    margin: 1em 0;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: normal;
+    color: #572929;
 }
 
 form {
-    width:220px;
-    margin:0 auto;
+    width: 220px;
+    margin: 0 auto;
 }
 
 fieldset {
-    border:none;
-    margin:0.25em;
-    padding:0;
+    border: none;
+    margin: 0.25em;
+    padding: 0;
 }
 
 fieldset input {
-    display:block;
-    margin-bottom:1em;
-    border:1px solid #ccc;
-    border:1px solid rgba(0,0,0,0.3);
+    display: block;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0,0,0,0.3);
     background: white;
     background: rgba(255, 255, 255, 0.5);
-    padding:2px 4px;
+    padding: 2px 4px;
     width: 100%;
 }
 
@@ -194,6 +202,7 @@ div.banner {
     color: #666;
     line-height: 1.2em;
 }
+
 div.banner:not(:empty) {
     margin-bottom: 1em;
 }
@@ -202,19 +211,15 @@ div.banner:not(:empty) {
     box-sizing: border-box;
 }
 
-input[type="submit"],
-input[type="reset"],
-input[type="button"],
-.action-button,
-.button {
+input[type="submit"], input[type="reset"], input[type="button"], .action-button, .button {
     cursor: pointer;
-    display:inline-block;
-    vertical-align:bottom;
-    height:24px;
+    display: inline-block;
+    vertical-align: bottom;
+    height: 36px;
     line-height: 22px;
     border: none;
     box-shadow: 0 0 0 1px rgba(0,0,0,0.25) inset;
-    padding:2px 11px;
+    padding: 2px 11px;
     color: #555;
     background-color: #f0f0f0;
     background-color: rgba(0,0,0,0.02);
@@ -222,49 +227,46 @@ input[type="button"],
     -moz-border-radius: 3px;
     border-radius: 3px;
     font-family: inherit;
-    font-size: 0.8em;
+    font-size: 1em;
     text-decoration: none;
--webkit-user-select: none;
-   -moz-user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
     -ms-user-select: none;
-        user-select: none;
--webkit-transition: opacity 0.1s ease, background-color 0.1s ease, box-shadow 0.1s ease, color 0.1s ease, background 0.1s ease;
-        transition: opacity 0.1s ease, background-color 0.1s ease, box-shadow 0.1s ease, color 0.1s ease, background 0.1s ease;
+    user-select: none;
+    -webkit-transition: opacity 0.1s ease, background-color 0.1s ease, box-shadow 0.1s ease, color 0.1s ease, background 0.1s ease;
+    transition: opacity 0.1s ease, background-color 0.1s ease, box-shadow 0.1s ease, color 0.1s ease, background 0.1s ease;
 }
-input[type="submit"] i,
-input[type="reset"] i,
-input[type="button"] i,
-.action-button i,
-.button i {
-  margin-right: 0.1em;
+
+input[type="submit"] i, input[type="reset"] i, input[type="button"] i, .action-button i, .button i {
+    margin-right: 0.1em;
 }
 
 .button:hover {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 button[type=submit], input[type="submit"], .primary.button {
-    font-weight: bold;
+    font-weight: 500;
     box-shadow: 0 0 0 1px rgba(0,0,0,0.45) inset;
     background-color: rgba(0,0,0,0.07);
 }
 
 button[type=submit]:hover, input[type=submit]:hover, input[type=submit]:active {
-  color: white;
-  box-shadow: 0 0 0 2px rgba(0,0,0,0.7) inset;
-  background-color: #888;
-  background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    box-shadow: 0 0 0 2px rgba(0,0,0,0.7) inset;
+    background-color: #888;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 input.submit:hover, input.submit:active {
-    background-position:bottom left;
+    background-position: bottom left;
 }
 
 #poweredBy {
-    font-size:0.8em;
-    color:#ccc;
-    padding:5px 15px;
-    text-align:center;
+    font-size: 0.8em;
+    color: #ccc;
+    padding: 5px 15px;
+    text-align: center;
     position: fixed;
     bottom: 10px;
     right: 10px;
@@ -275,7 +277,7 @@ input.submit:hover, input.submit:active {
 }
 
 #poweredBy a {
-    color:inherit;
+    color: inherit;
 }
 
 #poweredBy .osticket-logo {
@@ -290,7 +292,7 @@ input.submit:hover, input.submit:active {
 }
 
 #company {
-    position:absolute;
+    position: absolute;
     left: 50%;
     width: 400px;
     margin-left: -200px;
@@ -301,9 +303,8 @@ input.submit:hover, input.submit:active {
 }
 
 #company .content {
-    border-radius: 10px;
+    border-radius: 0;
     background-color: rgba(0,0,0,0.3);
-    box-shadow: 0 0 6px rgba(0,0,0,0.4);
     text-shadow: 0 0 2px black;
     display: inline-block;
     padding: 0 15px;
@@ -311,9 +312,10 @@ input.submit:hover, input.submit:active {
 }
 
 .external-auth {
-    display:inline-block;
+    display: inline-block;
     margin-bottom: 4px;
 }
+
 .external-auth + .external-auth {
     margin-top: 4px;
 }
@@ -321,11 +323,13 @@ input.submit:hover, input.submit:active {
 a.external-sign-in {
     text-decoration: none;
 }
+
 .external-auth-box {
     vertical-align: middle;
     border-radius: 4px;
     border: 1px solid #777;
 }
+
 .external-auth-icon {
     display: inline-block;
     color: #333;
@@ -333,13 +337,15 @@ a.external-sign-in {
     padding: 5px 10px;
     border-right: 1px solid #ddd;
 }
+
 .external-auth-name {
     color: #333;
     width: 100px;
     padding: 5px 10px;
-    line-height:30px;
+    line-height: 30px;
     font-size: 11pt;
 }
+
 img.sign-in-image {
     border: none;
     max-height: 40px;
@@ -348,12 +354,12 @@ img.sign-in-image {
     height: auto;
 }
 
-input[type=text],
-input[type=password] {
+input[type=text], input[type=password] {
     border-radius: 4px;
     padding: 5px;
-    font-size: 0.75em;
+    font-size: 1rem;
 }
+
 .hidden {
     display: none;
 }
