@@ -1,0 +1,11 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  
+  # Sovrascrivi theme.css per il frontend con il tuo file personalizzato
+  RewriteCond %{REQUEST_URI} ^/assets/default/css/theme.css [NC]
+  RewriteRule ^assets/default/css/theme.css$ /theme/custom-theme.css [L]
+
+  # Sovrascrivi scp.css per il backend con il tuo file personalizzato
+  RewriteCond %{REQUEST_URI} ^/scp/css/scp.css [NC]
+  RewriteRule ^scp/css/scp.css$ /theme/custom-scp.css [L]
+</IfModule>
