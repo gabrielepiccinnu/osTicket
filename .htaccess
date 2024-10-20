@@ -8,4 +8,8 @@
   # Sovrascrivi scp.css per il backend con il tuo file personalizzato
   RewriteCond %{REQUEST_URI} ^/scp/css/scp.css [NC]
   RewriteRule ^scp/css/scp.css$ /theme/custom-scp.css [L]
+
+  # Sovrascrivi login.css per il backend con il tuo file personalizzato
+  RewriteCond %{REQUEST_URI} ^/scp/css/login.css [NC]
+  RewriteRule ^scp/css/login.css$ /theme/custom-scp.css [L]
 </IfModule>
